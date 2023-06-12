@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
 <body>
     <!--  -->
-    <nav class="navbar bg-body-tertiar">
+    <nav class="navbar bg-body-tertiary sticky-sm-top">
         <div class="container-fluid">
-            <h1 style="text-align:center;">TO DO LIST</h1>
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+            <div class="navbar-text col-lg-4 col-md-4 col-sm-4">
+               <h2 class="middle" style="font-weight: bolder;"><img src="images/icon.png" alt=""> TO DO LIST</h2>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
         </div>
     </nav>
     <!--  -->
-    <div class="container-fluid">
+    <div class="main container-fluid">
         <div class="form1">
-            <div class="row">
-                <input type="text" id="input-box" placeholder="New task...">
+            <form class="d-flex ">
+                <input class="form-control me-2" type="text" id="input-box" placeholder="New task...">
                 <button onclick="addTask()"><b style="font-size:25px">+</b></button>
-            </div>
+            </form>
         </div>
-        <div class="form2 ">
-            <ul id="list-container">
+       
+        <div class="form2">
+            <center><u>The tasks you already added</u></center>
+            <div></div>
+            <ul id="list-container" class="container-fluid">
+
                 <!-- <li class="checked">Task 1</li>
                 <li>Task 2</li>
                 <li>Task 3</li> -->
